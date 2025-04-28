@@ -1,15 +1,13 @@
 
 import React from 'react';
 import { 
-  LayoutDashboard, 
-  ArrowLeftRight, 
-  Target, 
-  BarChart3, 
-  CreditCard, 
-  HelpCircle, 
   Settings, 
   Share2, 
-  LogIn
+  HelpCircle, 
+  LayoutDashboard,
+  CalendarDays,
+  ChartBar,
+  Bell
 } from 'lucide-react';
 
 interface SidebarItemProps {
@@ -51,11 +49,9 @@ const Sidebar = () => {
       {/* Menu Items */}
       <div className="px-2">
         <SidebarItem icon={LayoutDashboard} text="Dashboard" isActive={true} />
-        <SidebarItem icon={ArrowLeftRight} text="Transactions" hasArrow={true} />
-        <SidebarItem icon={Target} text="My Goals" />
-        <SidebarItem icon={BarChart3} text="Investment" />
-        <SidebarItem icon={CreditCard} text="Bills and Payment" />
-        <SidebarItem icon={BarChart3} text="Analytics and Reports" />
+        <SidebarItem icon={CalendarDays} text="Cobertura días" />
+        <SidebarItem icon={ChartBar} text="Venta proyectada" />
+        <SidebarItem icon={Bell} text="Notificaciones" />
       </div>
       
       {/* Support Section */}
@@ -69,17 +65,7 @@ const Sidebar = () => {
         <SidebarItem icon={Settings} text="Settings" />
       </div>
 
-      {/* Upgrade Section */}
-      <div className="mt-auto p-4">
-        <div className="bg-finance-card p-3 rounded-lg">
-          <div className="text-sm font-medium mb-1">Become Pro Access</div>
-          <div className="text-xs text-gray-400 mb-3">Try new experience for cheap</div>
-          <button className="w-full bg-gradient-to-r from-amber-500 to-amber-300 text-black rounded-lg py-1.5 flex items-center justify-center text-sm font-medium">
-            <LogIn size={16} className="mr-1" />
-            Upgrade Pro
-          </button>
-        </div>
-      </div>
+      {/* Removed the Upgrade Section since it wasn't requested */}
     </div>
   );
 };
