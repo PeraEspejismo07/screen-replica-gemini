@@ -8,8 +8,7 @@ import {
   CalendarDays,
   ChartBar,
   Bell,
-  ChevronLeft,
-  ChevronRight
+  ChevronLeft
 } from 'lucide-react';
 
 import {
@@ -44,9 +43,7 @@ const AppSidebar = () => {
     <Sidebar>
       {/* Logo */}
       <SidebarHeader className="flex items-center p-4">
-        <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-          <Share2 size={16} className="text-white" />
-        </div>
+        <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
         <div className="ml-2">
           <div className="font-medium text-white">Finemic</div>
         </div>
